@@ -5,7 +5,7 @@ import styled from "styled-components";
 import config from "../config";
 
 // COMPONENTS
-import { BottonNavBar } from "../components";
+import { BottomNavBar } from "../components";
 
 // component styles
 const Wrapper = styled.div``;
@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   return (
     <div >
       <Wrapper className="container-fluid">
-            <Main className="main">{children}</Main>
+            <Main>{children}</Main>
       </Wrapper>
       <>{config.bottomnavbar ? <BottomNavBar /> : <></>}</>
     </div>

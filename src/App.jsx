@@ -1,38 +1,36 @@
-import { route, routes} from 'react-router-dom'
-/** SERVICES */
-import { urlPath } from "./services";
+import { Route, Routes} from 'react-router-dom'
+
+// STYLES
+import "../public/css/ga-styles.css";
+
 /** CONTEXT */
 import {
   GeneralContextProvider,
 } from "./contexts";
 
+// COMPONENTS
+import { Home } from "./pages";
+import SuperLayout from "./layout/SuperLayout.jsx";
 
 function App() {
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <Routes>
+      {["/", "/home"].map((path, i) => {
+        return (
+          <Route
+            key={i}
+            path={path}
+            element={
+                <SuperLayout>
+                  <Home />
+                </SuperLayout>
+            }
+          />
+        );
+      })}
+    </Routes>
+    // <Outlet />
+  );
 }
 
 export default App
