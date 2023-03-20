@@ -1,0 +1,17 @@
+footer {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+	a {
+		color: $grey-dark;
+		text-decoration: none;
+
+		&:hover {
+			color: $grey-dark;
+			text-decoration: underline;
+		}
+	}
+}

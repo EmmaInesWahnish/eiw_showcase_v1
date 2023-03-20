@@ -1,0 +1,13 @@
+$logo-width: 131px;
+
+body {
+	background-color: $grey-light;
+	scrollbar-gutter: stable both-edges;
+
+	&.modal-open {
+		overflow: auto !important;
+		&[style] {
+			padding-right: 0px !important;
+		}
+	}
+}

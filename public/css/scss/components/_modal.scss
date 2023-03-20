@@ -1,0 +1,45 @@
+.modal {
+	.modal-dialog {
+		.modal-header {
+			border: none;
+
+			.btn-close {
+				background: none;
+				margin: 0;
+				padding: 0.5rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.modal-content {
+			box-shadow: 0px 12px 20px rgba($ga-brand-dark, 0.2);
+
+			.modal-footer {
+				justify-content: left;
+			}
+		}
+
+		&.modal-lg {
+			.modal-body {
+				max-height: 55vh;
+				overflow-y: scroll;
+
+				@include respond-to($lg) {
+					max-height: none;
+				}
+			}
+		}
+	}
+
+	p {
+		color: $grey-dark;
+		font-size: 16px;
+	}
+}
+
+.modal-bg {
+	display: block;
+	background: rgba(0, 0, 0, 0.8);
+}

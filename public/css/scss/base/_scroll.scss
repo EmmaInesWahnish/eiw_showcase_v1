@@ -1,0 +1,33 @@
+:root {
+	scrollbar-color: light;
+}
+
+::-webkit-scrollbar {
+	background-color: white;
+	border-radius: 0;
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+:hover::-webkit-scrollbar {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar:hover {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
+:hover::-webkit-scrollbar-thumb {
+	background-color: #c1c1c1;
+	background-clip: padding-box;
+	border-radius: 4px;
+	padding: 100px 0 0;
+}
+
+::-webkit-scrollbar:active {
+	background-color: transparent;
+}
