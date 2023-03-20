@@ -4,9 +4,9 @@ const Home = () => {
   let banner = "https://www.youtube.com/embed/tgbNymZ7vqY";
   console.log("banner", banner);
   return (
-    <div width="600px" height="600px">
-      <IframeComponent width="100%" height="100%" banner={banner} />
-      <div class="container">
+    <div style={{width:"800px", height:"600px"}}>
+      <IframeComponent width="auto" height="90%" banner={banner} />
+      <div className="container">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
           recusandae ullam? Voluptatibus facere quasi distinctio quo quod,
