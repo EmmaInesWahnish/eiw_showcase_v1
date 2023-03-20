@@ -1,10 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { App } from "./index";
+
+/** CONTEXT */
+import {
+  GeneralContextProvider,
+} from "./contexts";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+        <GeneralContextProvider>
+            <App />
+        </GeneralContextProvider>
+  </BrowserRouter>
 )
