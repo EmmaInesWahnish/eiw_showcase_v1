@@ -5,7 +5,7 @@ const Home = () => {
   console.log("banner", banner);
   return (
     <div style={{width:"800px", height:"600px"}}>
-      <IframeComponent width="auto" height="90%" banner={banner} />
+      <IframeComponent banner={banner} />
       <div className="container">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,

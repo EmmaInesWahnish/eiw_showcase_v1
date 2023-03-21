@@ -1,8 +1,8 @@
 import React from "react";
-const IframeComponent = ({width, height, banner}) => {
+const IframeComponent = ({banner}) => {
 console.log("banner",banner)
   return (
-    <div className="container" style={{width:{width}, height:{height}}}>
+    <div className="container" >
       <iframe
         className="responsive-iframe"
         src={banner}>
