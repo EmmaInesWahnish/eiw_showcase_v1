@@ -12,11 +12,10 @@ const Wrapper = styled.div``;
 const Main = styled.main``;
 
 const Layout = ({ children }) => {
-
   return (
-    <div >
+    <div>
       <Wrapper className="container-fluid">
-            <Main>{children}</Main>
+        <Main>{children}</Main>
       </Wrapper>
       <>{config.bottomnavbar ? <BottomNavBar /> : <></>}</>
     </div>
